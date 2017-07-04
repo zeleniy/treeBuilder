@@ -1,0 +1,78 @@
+g.block {
+    pointer-events: all;
+    fill: white;
+    stroke: #edf0f3;
+    stroke-width: 2;
+    cursor: pointer;
+}
+
+g.block.template {
+    stroke: #edf0f3;
+}
+
+g.block.instance {
+    stroke: #00b0ff;
+}
+
+g.block text {
+    text-anchor: middle;
+    fill: #596877;
+    stroke-width: 0;
+}
+
+g.block rect.socket:hover {
+    fill: #e4f7ff;
+}
+
+g.block rect.socket-area {
+    stroke-width: 0;
+    fill: transparent;
+}
+
+g.block rect.socket-area:hover {
+    fill: #e4f7ff;
+}
+
+g.arrow {
+    fill: none;
+    stroke: #00b0ff;
+    stroke-width: 2;
+}
+
+.arrow-head {
+    fill: #00b0ff;
+}
+
+g.arrow path.arrow-sensor {
+    stroke: transparent;
+    stroke-width: 20;
+}
+
+g.arrow g.arrow-remove-button, g.block g.block-remove-button {
+    cursor: pointer;
+    display: none;
+}
+
+g.arrow circle {
+    fill: white;
+}
+
+g.zoom-controls {
+    pointer-events: all;
+}
+
+g.zoom-controls rect {
+    fill: white;
+    stroke: #596877;
+    stroke-width: 1;
+}
+
+g.zoom-controls rect:hover {
+    fill: #edf0f3;
+}
+
+g.zoom-controls line {
+    stroke: #596877;
+    stroke-width: 2;
+    pointer-events: none;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/graph.css" rel="stylesheet">
+    <script src="lib/d3.min.js"></script>
+    <script src="js/flowGraph.js"></script>
+    <script src="js/block.js"></script>
+    <script src="js/blockState.js"></script>
+    <script src="js/blockInstanceState.js"></script>
+    <script src="js/blockTemplateState.js"></script>
+    <script src="js/arrow.js"></script>
+</head>
+<body>
+    <div id="flow-graph"></div>
+</body>
+    <script>
+    d3.json('data/seguira_nodes.json', function(error, blocksList) {
+        graph = FlowGraph.getInstance()
+            .setBlocksList(blocksList)
+            .render('#flow-graph')
+    });
+    </script>
+</html>

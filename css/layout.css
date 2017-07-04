@@ -1,0 +1,104 @@
+/*
+ * Template given from http://jsfiddle.net/tilwinjoy/kf2JP/
+ */
+
+div.flow-graph {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    color: #596877;
+    font-size: 14px;
+}
+
+div.flow-graph > div.top-side {
+    top: 0;
+    height: 30px;
+    width: 100%;
+    box-shadow: 0px 5px 10px -5px rgba(203, 209, 216, 1);
+}
+
+div.flow-graph > div.top-side > div.controls {
+    display: inline-block;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    float:  right;
+    cursor: pointer;
+}
+
+div.flow-graph > div.top-side > div.controls:hover {
+    background-color: rgba(203, 209, 216, 0.2);
+}
+
+div.flow-graph > div.viewport {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 220px;
+    bottom: 0px;
+    overflow: hidden;
+    /* background-color: rgba(44, 160, 44, 0.2); */
+    z-index: 1;
+}
+
+div.flow-graph > div.left-side {
+    position: absolute;
+    width: 220px;
+    top: 30px;
+    bottom: 0px;
+    overflow: hidden;
+    /* background-color: rgba(44, 160, 44, 0.2); */
+    box-shadow: 5px 0px 10px -5px rgba(203, 209, 216, 1);
+    pointer-events: none;
+}
+
+div.flow-graph g.blocks-canvas rect.background {
+    fill: #fff;
+}
+
+div.flow-graph > div.right-side {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    width: 220px;
+    overflow: scroll;
+    /* background-color: rgba(255, 127, 14, 0.2); */
+    box-shadow: -5px 0px 10px -5px rgba(203, 209, 216, 1);
+}
+
+div.flow-graph > div.right-side .display-block {
+    /* border: 1px solid #cbd1d8; */
+    margin: 10px 5px 25px 5px;
+    padding: 0px 5px 15px 5px;
+    /* box-shadow: 0 0 4px #cbd1d8; */
+    color: #62707e;
+}
+
+
+div.flow-graph .display-block .display-property-title {
+    font-size: 11px;
+    line-height: 25px;
+
+}
+
+div.flow-graph .display-block .display-property-value {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+div.flow-graph .display-block input.display-property-value {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #cbd1d8;
+    color: #62707e;
+}
+
+div.flow-graph .display-block textarea.display-property-value {
+    border: 0;
+    border-bottom: 1px solid #cbd1d8;
+    resize: vertical;
+    color: #62707e;
+}

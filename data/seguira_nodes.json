@@ -1,0 +1,24 @@
+{"nodes":[{
+    "Type":"Browser",
+    "Data":{
+        "Address": "http://seguira.com"
+        }
+    }, {
+    "Type":"Validate",
+    "Data":{
+            "ElementID":"validateId"
+        }
+    }, {
+    "Type":"Input",
+    "Data":{
+        "ElementName":"input",
+        "Value":"The Big Bang theory is the prevailing cosmological model for the universe from the earliest known periods through its subsequent large-scale evolution. The model describes how the universe expanded from a very high density and high temperature state, and offers a comprehensive explanation for a broad range of phenomena, including the abundance of light elements, the cosmic microwave background, large scale structure and Hubble's Law. If the known laws of physics are extrapolated to the highest density regime, the result is a singularity which is typically associated with the Big Bang. Detailed measurements of the expansion rate of the universe place this moment at approximately 13.8 billion years ago, which is thus considered the age of the universe. After the initial expansion, the universe cooled sufficiently to allow the formation of subatomic particles, and later simple atoms. Giant clouds of these primordial elements later coalesced through gravity in halos of dark matter, eventually forming the stars and galaxies visible today.",
+        "FieldType": "textarea"
+        }
+    }, {
+        "Type":"Click",
+        "Data":{
+            "ElementName":"type"
+        }
+    }
+]}
